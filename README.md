@@ -39,7 +39,7 @@ API Key: NeOWg4lxWMZahw39f0MQj3g1GjWzF1O92fpLATEJ
 
 
 #RD Document - 1ST INCREMENT
-  By the end of increment 1, you are expected to have a first version of the functional
+  - By the end of increment 1, you are expected to have a first version of the functional
   requirements (something that the system shall do) and non-functional requirements (any
   requirement referring to a property of the system, such as security, safety, software quality,
   performance, reliability, etc.) specified, the use cases involved in the current state of your
@@ -47,7 +47,7 @@ API Key: NeOWg4lxWMZahw39f0MQj3g1GjWzF1O92fpLATEJ
 
 
 #IT Document - 1ST INCREMENT
-An implementation and testing document (see IT Template.docx found on Canvas) describing
+  - An implementation and testing document (see IT Template.docx found on Canvas) describing
   the programming language used, the APIs, platforms, technologies, etc. used in your system, as
   well as the testing strategy used by your team to test the system. This will also be updated and
   improved between increments as needed. Place this document in your GitHub repository and keep
