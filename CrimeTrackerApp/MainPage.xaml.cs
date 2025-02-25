@@ -2,23 +2,36 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+    private void OnLoginClicked(object sender, EventArgs e)
+    {
+        string username = usernameEntry.Text;
+        string password = passwordEntry.Text;
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+        if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+        {
+            messageLabel.Text = "Please enter both username and password.";
+            messageLabel.TextColor = Colors.Red;
+            return;
+        }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+        // Simple login validation (Replace with real authentication logic)
+        if (username == "admin" && password == "password")
+        {
+            messageLabel.Text = "Login successful!";
+            messageLabel.TextColor = Colors.Green;
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+            // Navigate to another page (Replace with your actual page)
+            Navigation.PushAsync(new DashboardPage());
+        }
+        else
+        {
+            messageLabel.Text = "Invalid username or password.";
+            messageLabel.TextColor = Colors.Red;
+        }
+    }
 }
-
