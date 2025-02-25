@@ -69,5 +69,12 @@ API Key: NeOWg4lxWMZahw39f0MQj3g1GjWzF1O92fpLATEJ
 
 
 
+****** NOTES ******
+1. In order to get the MAUI application to run on my mac with an m4 chip, I had to run the command "sudo dotnet workload install ios"
+2. Then go to Rider settings->Toolset and build, then uncheck Automatically download .NET SDK if necessary
+3. Then switch MSBuild version to "(Auto-Detected).
+
+
+
 
 
